@@ -1,6 +1,7 @@
-langchain_core==1.2.23
-langgraph==1.1.4
-langchain_google_genai==4.2.1
-serpapi==1.0.2
-SpeechRecognition==3.14.5
-streamlit == 1.54.0
+langchain-core
+langgraph>=1.1.6
+langchain-google-genai
+serpapi
+SpeechRecognition
+streamlit==1.54.0
+pandas
