@@ -49,9 +49,9 @@ if 'SerpClient' not in st.session_state:
 
 @st.cache_data
 def load_databases():
-    phones = pd.read_csv('mobile_phones.csv')
-    laptops = pd.read_csv('laptops.csv')
-    cars = pd.read_csv('cars.csv')
+    phones = pd.read_csv('data/mobile_phones.csv')
+    laptops = pd.read_csv('data/laptops.csv')
+    cars = pd.read_csv('data/cars.csv')
     return phones, laptops, cars
 
 phones_db, laptops_db, cars_db = load_databases()
