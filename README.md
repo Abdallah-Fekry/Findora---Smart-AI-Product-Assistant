@@ -157,6 +157,10 @@ streamlit run app.py
 
 ---
 
+### Test the app
+
+https://findora-ai-assistant.streamlit.app/
+
 # 📸 Demo
 
 [![Watch the demo](https://img.youtube.com/vi/1qybCcar-vE/0.jpg)](https://youtu.be/1qybCcar-vE)
@@ -178,34 +182,6 @@ streamlit run app.py
 * 🛍️ More marketplaces (Jumia, Noon)
 * 📊 Advanced ranking algorithms
 * ☁️ Cloud deployment (AWS / GCP)
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repo
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
-
----
-
-# 📜 License
-
-This project is licensed under the MIT License.
-
----
-
-# 👨‍💻 Author
-
-**Abdallah Fekry**
-AI Engineer | Data Scientist
-* 💼 LinkedIn: http://www.linkedin.com/in/abdallah-fekry
-* 💻 GitHub: [https://github.com/BeboFekry](https://github.com/Abdallah-Fekry)
-* 📧 Email: [abdallahfekry95@gmail.com](mailto:abdallahfekry95@gmail.com)
 
 ---
 
