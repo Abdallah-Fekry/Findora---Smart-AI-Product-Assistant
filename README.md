@@ -2,7 +2,7 @@
 
 > Smarter Shopping Starts Here.
 
-Findora is an intelligent AI-powered assistant designed to help users find, compare, and purchase products بسهولة وذكاء.
+Findora is an intelligent AI-powered assistant designed to help users find, compare, and purchase products.
 It combines **AI decision-making**, **structured datasets**, and **real-time web data** to deliver the best product recommendations in seconds.
 
 ---
