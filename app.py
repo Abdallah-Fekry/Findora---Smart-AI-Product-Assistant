@@ -1,6 +1,9 @@
 import streamlit as st
 
-about = """Your about info"""
+about = """Findora is an AI-powered product assistant designed to simplify the process of finding, 
+comparing, and purchasing products. The system leverages advanced Artificial Intelligence 
+techniques, including Large Language Models (LLMs) and agent-based workflows, to deliver 
+personalized and data-driven recommendations."""
 menu_items = {
 "Get help": "mailto:@abdallahfekry95@gmail.com",
 "About": about}
