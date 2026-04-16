@@ -68,7 +68,7 @@ with col2:
     st.header("The Smartest AI Products Assistant\n\n## Ready to Chat!", text_alignment='center')
     st.markdown(':rainbow[Products recommentdation, database resources, search Amazon, search Ebay, decision supports]', text_alignment='center')
     mt = st.empty()
-    st.columns([1.47,1,1], vertical_alignment='top')[1].image(r"media\Ai Robot Vector Art.gif")
+    st.columns([1.47,1,1], vertical_alignment='top')[1].image(r"media/Ai Robot Vector Art.gif")
 
     col1, col2, col3, col4 = st.columns([3,1.1,1.1,3])
     with col2:
@@ -85,28 +85,28 @@ with col2:
     with col1:
         col11, col22, col33 = st.columns(3)
         with col22:
-            st.image(r"media\database (1).png")
+            st.image(r"media/database (1).png")
         # st.header(":material/database_search:", text_alignment='center', width='stretch')
         st.markdown("Database resources", text_alignment='center')
         st.caption("Search for the best product capabilities from recources", text_alignment='center')
     with col2:
         col11, col22, col33 = st.columns(3)
         with col22:
-            st.image(r"media\shopping-cart.png")
+            st.image(r"media/shopping-cart.png")
         # st.header(":material/shopping_cart:", text_alignment='center')
         st.markdown("Online purchase", text_alignment='center')
         st.caption("Purchase online products from several recources with best price", text_alignment='center')
     with col3:
         col11, col22, col33 = st.columns(3)
         with col22:
-            st.image(r"media\bot.png")
+            st.image(r"media/bot.png")
         # st.header(":material/robot_2:", text_alignment='center')
         st.markdown("Personal assistant", text_alignment='center')
         st.caption("Access and talk with the smart AI products assistant Findora", text_alignment='center')
     with col4:
         col11, col22, col33 = st.columns(3)
         with col22:
-            st.image(r"media\artificial-intelligence (1).png")
+            st.image(r"media/artificial-intelligence (1).png")
         # st.header(":material/inventory:", text_alignment='center')
         st.markdown("Decision Support", text_alignment='center')
         st.caption("Relax and let the AI takes the best decisions instead of you", text_alignment='center')
