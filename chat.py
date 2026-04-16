@@ -84,8 +84,8 @@ def search_phone(budget:float, company:str, ram:int, front_camera:int, back_came
         results = pd.concat([results[(results['Back Camera'].str.contains(f"{back_camera}MP", case=False))],results[(results['Back Camera'].str.contains(f"{back_camera} MP", case=False))]])
     if multi_cameras:
         results = results[(results['Back Camera'].str.contains('\+'))]
-    results = results.drop_duplicates()
-    return results.to_dict(orient="records")
+    results = results.drop_duplicates() 
+    return results.to_json(orient="records")
 
 @tool
 def search_laptop(budget:float, company:str) -> dict:
@@ -98,7 +98,7 @@ def search_laptop(budget:float, company:str) -> dict:
     if company:
         results = results[(results['Brand'].str.contains(company, case=False))]
     results = results.drop_duplicates()
-    return results.to_dict(orient="records")
+    return results.to_json(orient="records")
 
 @tool
 def search_car(budget:float, company:str) -> dict:
@@ -111,7 +111,7 @@ def search_car(budget:float, company:str) -> dict:
     if company:
         results = results[(results['Company Names'].str.contains(company, case=False))]
     results = results.drop_duplicates()
-    return results.to_dict(orient="records")
+    return results.to_json(orient="records")
 
 # @tool
 def amazon_search(query:str) -> dict:
@@ -317,13 +317,13 @@ def add_message(sender,message):
 def chat(text):
     try:
         add_message('human', text)
-        # Decrease messages lenght _____________________________________________
-        if len(st.session_state.messages)>10:
-            messages = [st.session_state.messages[0]]
-            messages = messages + st.session_state.messages[-9:]
-        else:
-            messages = st.session_state.messages
-        # ______________________________________________________________________
+        # # Decrease messages lenght _____________________________________________
+        # if len(st.session_state.messages)>10:
+        #     messages = [st.session_state.messages[0]]
+        #     messages = messages + st.session_state.messages[-9:]
+        # else:
+        #     messages = st.session_state.messages
+        # # ______________________________________________________________________
         with loading.chat_message("assistant", avatar='media/bot avatar.png'):
             col1, col2 = st.columns([1,15], vertical_alignment='center', gap=None)
             with col1:
@@ -454,7 +454,10 @@ if message:
         current.chat_message('user', avatar='media/user avatar.png').audio(message.audio, autoplay=False)
         with open("user_voice.mp3", "wb") as f:
             f.write(message.audio.read())
-        text = speech_to_text("user_voice.mp3", st.session_state.language)
+        try:
+            text = speech_to_text("user_voice.mp3", st.session_state.language)
+        except KeyError as e:
+            st.error(f"{e}\nYour current Language is {st.session_state.language} use the specified language or change it and use a quiet place to use the speech tool")
         response = chat(text)
         loading.empty()
         # st.session_state.chat.append({"role":"user","parts":[{"text":text}]})
