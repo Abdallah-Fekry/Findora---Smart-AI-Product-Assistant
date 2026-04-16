@@ -122,7 +122,7 @@ Findora/
 ## 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/findora.git
+git clone https://github.com/Abdallah-Fekry/Findora---Smart-AI-Product-Assistant.git
 cd findora
 ```
 
@@ -159,7 +159,7 @@ streamlit run app.py
 
 # 📸 Demo
 
-👉 [Watch Demo Video](https://youtu.be/1qybCcar-vE)
+👉 [Watch Demo Video]([https://youtu.be/1qybCcar-vE](https://youtu.be/1qybCcar-vE?si=Pkh3l9ZSWvuFe6rO))
 
 ---
 
@@ -204,9 +204,8 @@ This project is licensed under the MIT License.
 
 **Abdallah Fekry**
 AI Engineer | Data Scientist
-
 * 💼 LinkedIn: http://www.linkedin.com/in/abdallah-fekry
-* 💻 GitHub: https://github.com/BeboFekry
+* 💻 GitHub: [https://github.com/BeboFekry](https://github.com/Abdallah-Fekry)
 * 📧 Email: [abdallahfekry95@gmail.com](mailto:abdallahfekry95@gmail.com)
 
 ---
