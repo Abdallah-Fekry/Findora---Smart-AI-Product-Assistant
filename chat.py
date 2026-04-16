@@ -85,7 +85,7 @@ def search_phone(budget:float, company:str, ram:int, front_camera:int, back_came
     if multi_cameras:
         results = results[(results['Back Camera'].str.contains('\+'))]
     results = results.drop_duplicates()
-    return results.to_json(orient="records")
+    return results.to_dict(orient="records")
 
 @tool
 def search_laptop(budget:float, company:str) -> dict:
@@ -98,7 +98,7 @@ def search_laptop(budget:float, company:str) -> dict:
     if company:
         results = results[(results['Brand'].str.contains(company, case=False))]
     results = results.drop_duplicates()
-    return results.to_json(orient="records")
+    return results.to_dict(orient="records")
 
 @tool
 def search_car(budget:float, company:str) -> dict:
@@ -111,7 +111,7 @@ def search_car(budget:float, company:str) -> dict:
     if company:
         results = results[(results['Company Names'].str.contains(company, case=False))]
     results = results.drop_duplicates()
-    return results.to_json(orient="records")
+    return results.to_dict(orient="records")
 
 # @tool
 def amazon_search(query:str) -> dict:
