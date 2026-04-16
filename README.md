@@ -159,8 +159,7 @@ streamlit run app.py
 
 # 📸 Demo
 
-👉 [Watch Demo Video]([https://youtu.be/1qybCcar-vE](https://youtu.be/1qybCcar-vE?si=Pkh3l9ZSWvuFe6rO))
-
+[![Watch the demo](https://img.youtube.com/vi/1qybCcar-vE/0.jpg)](https://youtu.be/1qybCcar-vE)
 ---
 
 # 💡 Example Queries
