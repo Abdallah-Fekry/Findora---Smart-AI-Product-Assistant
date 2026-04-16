@@ -19,9 +19,6 @@ menu_items = {
 "About": about}
 st.set_page_config(page_title="Otcobot", initial_sidebar_state='collapsed', layout='wide', menu_items=menu_items)
 
-# with open('html.txt','rb') as f:
-#     particles_js = f.read()
-
 if "chat" not in st.session_state:
     st.session_state.chat = []
 
@@ -87,6 +84,7 @@ def search_phone(budget:float, company:str, ram:int, front_camera:int, back_came
         results = pd.concat([results[(results['Back Camera'].str.contains(f"{back_camera}MP", case=False))],results[(results['Back Camera'].str.contains(f"{back_camera} MP", case=False))]])
     if multi_cameras:
         results = results[(results['Back Camera'].str.contains('\+'))]
+    results = results.drop_duplicates()
     return results.to_json(orient="records")
 
 @tool
@@ -99,6 +97,7 @@ def search_laptop(budget:float, company:str) -> dict:
         results = laptops
     if company:
         results = results[(results['Brand'].str.contains(company, case=False))]
+    results = results.drop_duplicates()
     return results.to_json(orient="records")
 
 @tool
@@ -111,6 +110,7 @@ def search_car(budget:float, company:str) -> dict:
         results = cars
     if company:
         results = results[(results['Company Names'].str.contains(company, case=False))]
+    results = results.drop_duplicates()
     return results.to_json(orient="records")
 
 # @tool
