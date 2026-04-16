@@ -6,7 +6,7 @@ menu_items = {
 "About": about}
 st.set_page_config(page_title="Findora", page_icon='media/icon.png', initial_sidebar_state='collapsed', layout='centered', menu_items=menu_items)
 
-st.logo("media/logo.png")
+st.logo("media/Logo.png")
 
 if "first_time" not in st.session_state:
   st.session_state.first_time = True
